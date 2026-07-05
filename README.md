@@ -1,10 +1,11 @@
 # Students Record Management (C)
+A console-based Student Record Management System developed in C using a Singly Linked List.
 
 ## Features
--Add student
--Delete Student
--Search Student
--Display All Students
+- Add student
+- Delete Student
+- Search Student
+- Display All Students
 
 ## Data Structure Used
 -Singly Linked List
