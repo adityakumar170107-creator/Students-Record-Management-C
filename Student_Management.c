@@ -19,7 +19,7 @@ int main(){
     printf("Enter 2 to Delete a student's record.\n");
     printf("Enter 3 to search student's record.\n");
     printf("Enter 4 to display all students.\n");
-    printf("Enter 5 to exit.\n");
+    printf("Any other number to exit.\n");
     printf("Enter: ");
     int c;
     scanf("%d",&c);
@@ -90,7 +90,14 @@ void  addStudent(struct student* s1){
 
 void delStudent(int r){
   struct student* temp = head;
-  if(!temp->next){
+  if(head && head->roll == r){
+    struct student *t = head;
+    head = head->next;
+    free(t);
+    printf("\nUser removed successfully!\n");
+    return;
+  }
+  else if(!temp->next){
     if(temp->roll==r){
       head = NULL;
       free(temp);
