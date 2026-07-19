@@ -12,3 +12,5 @@ A console-based Student Record Management System developed in C using a Singly L
 
 ## Language
 -C
+##Bug
+- This program does not work properly for duplicate roll numbers
